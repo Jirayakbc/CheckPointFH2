@@ -5,7 +5,13 @@ fieldset {
     padding: 25px;
     position: relative;
    }
-
+   .titulo{
+     text-align: center;
+     border: 2px solid;
+     padding: 20px;
+     background-color: red;
+     color: white;
+   }
    body{
      /* background-image: url(); */
      background-color: blue;
