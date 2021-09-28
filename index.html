@@ -9,31 +9,41 @@
 </head>
 <body>
     <form action="#" method="POST">
-        <fieldset id="dados">    
+        <fieldset id="dados">
         <legend>Dados Pessoais:</legend>
+        <div>
         <label for="nome">Nome Completo </label>
         <input type="text" name="nome" id="nome" maxlength="100" placeholder="Digite seu nome" required>
-
+        </div>
+        <div>
         <label for="email">e-mail</label>
         <input type="text" name="email"  id="email" placeholder="Digite seu e-mail" required>
-
+        </div>
+        <div>
         <label for="telefone">Telefone:</label>
-        <input type="tel" name="telefone" id="telefone" placeholder="(XX)00000-0000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}>
-
+        <input type="tel" name="telefone" id="telefone" placeholder="(XX)00000-0000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"">
+        </div>
+        <div>
         <label for="nascimento">Data de Nascimento</label>
         <input type="date" id="nascimento" placeholder="Digite seu nome" required>
-
+        </div>
+        <div>
+        <!-- Campos radio button para definir maior ou menor idade -->
         <input type="radio" name="idade" id="idade-maior" checked>
         <label for="idade-maior">Maior de 18 anos</label>
-        <!-- <input type="radio"> -->
+        
+        
         <input type="radio" name="idade" id="idade-menor" >
         <label for="idade-menor">Menor de 18 anos</label>
-
+        </div>
 
     </fieldset>  
 
         <fieldset>
+            <div>
             <legend>Interesses</legend>
+            </div>
+            <div>
             <label for="ponto">Ponto de Interesse</label>
             <select name="turistico" id="turistico">
                 <option value="selecione">selecione</option>
@@ -41,16 +51,18 @@
                 <option value="botanico">Jardim Botanico</option>
                 <option value="parque">Parque das Aguas</option>
             </select>
-
+            </div>
+            <div>
             <input type="checkbox" name="nome" id="turista">Turista
             <input type="checkbox" name="nome" id="residente">Residente
             <input type="checkbox" name="nome" id="estudante">Estudante
             <!-- <input type="checkbox" name="nome" id=""> -->
-
+            </div>
         </fieldset>
-
-        <input type="submit" name="enviar" id="enviar">
+        <div>
+        <input type="submit" name="enviar" id="enviar" >
         <input type="reset" name="limpar" value="Limpar" id="limpar">
+        </div>
     </form>
 
 

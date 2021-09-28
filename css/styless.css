@@ -5,13 +5,29 @@ fieldset {
     padding: 25px;
     position: relative;
    }
+
+   body{
+     /* background-image: url(); */
+     background-color: blue;
+   }
+
+   body form{
+    margin: 5%;
+    border: 2px violet solid;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+   }
+   form{
+     background-color: red;
+   }
    
    legend {
      background-color: rgb(255, 255, 255);
      color: blueviolet;
      font-size: 30px;
      padding: 10px;
-     position: absolute; /* reposiciona a tag em relação ao body OU ao ancestral posicionado mais próximo */
+     position: absolute; 
      top: -30px;
      left:20vh;
    }
@@ -20,7 +36,7 @@ fieldset {
      margin: 20px;
    }
    
-   button {
+   #limpar {
      padding: 10px;
      margin: 10px;
      background-color: blueviolet;
@@ -28,8 +44,20 @@ fieldset {
      font-size: 20px;
      border: 0;
      border-radius: 30px;
+     position: absolute;
+     position:absolute;
+     left:100%;
+     margin-left:-110px;
+    }
+   #enviar{
+    padding: 10px;
+    margin: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 30px;
+    position:absolute;
+		left:5%;
    }
-   
-   #buttons {
-     text-align: center;
-   }
+
